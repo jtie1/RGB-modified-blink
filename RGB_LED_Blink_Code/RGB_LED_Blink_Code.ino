@@ -1,4 +1,4 @@
-const int delayTime = 500;
+const int delayTime = 1000;
 int i = 0;
 
 void setup() {
@@ -17,6 +17,7 @@ void setup() {
 void loop() {
   newBlink(i);
   i++;
+//  RGB_color(255, 255, 255);
 }
 
 void newBlink(int i){
@@ -48,15 +49,15 @@ void newBlink(int i){
 }
 
 void RGB_color(int red, int green, int blue){
-  analogWrite(A0, red);
-  analogWrite(A1, green);
-  analogWrite(A2, blue);
-  
-  analogWrite(A3, red);
-  analogWrite(A4, green);
-  analogWrite(A5, blue);
+//  analogWrite(A0, red);
+//  analogWrite(A1, green);
+//  analogWrite(A2, blue);
+//  
+//  analogWrite(A3, red);
+//  analogWrite(A4, green);
+//  analogWrite(A5, blue);
 
-  /* Code for pins that ended up shifted over :( 
+//  /* Code for pins that ended up shifted over :( 
   analogWrite(A1, red);
   analogWrite(A2, green);
   analogWrite(A3, blue);
@@ -64,5 +65,5 @@ void RGB_color(int red, int green, int blue){
   analogWrite(A4, red);
   analogWrite(A5, green);
   analogWrite(A6, blue);
-  */
+//  */
 }
